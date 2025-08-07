@@ -262,3 +262,11 @@ function YoutubeLinkInput() {
     </div>
   );
 }
+
+export async function getServerSideProps() {
+  // This code runs on the server every time the page is requested
+  console.log("Server-side code running on page request (SSR)");
+  // You can call APIs, run scripts, etc. here
+
+  return { props: {} };
+}
